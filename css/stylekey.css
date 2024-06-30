@@ -1,0 +1,120 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(192, 192, 255);
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    height: 100px;
+    width: 100%;
+    z-index: +1;
+}
+
+nav{ 
+    display: flex;
+    flex-direction: column;
+    z-index: +1;
+}
+
+.head1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#erro{
+    display: flex;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+#gojo{
+    animation: goza 2s forwards;
+    transform: translateX(500%);
+}
+@keyframes goza {
+    from{
+        transform: translateX(500%);
+    }
+    to{
+        transform: translateX(-200%);
+    }
+}
+#buxa{
+    animation: buxa 2s forwards;
+    transform: translateX(-500px);
+}
+@keyframes buxa {
+    from{
+        transform: translateX(-500%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+div{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    z-index: +1;
+}
+#vermelho {
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: roxo 6s 2s forwards;
+    transform: translateY(500px);
+}
+#azul {
+    background: rgb(0, 38, 255);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: azular 3s 2s forwards;
+    transform: translateY(-500px);
+}
+
+@keyframes azular {
+    0%{
+        transform: translateY(-350px);
+        background-color: blue;
+    }
+    99%{
+        background-color: blue;
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(100px);
+        background-color: transparent;
+    }
+}
+
+@keyframes roxo {
+    0%{
+        transform: translateY(350px);
+        background-color: red;
+    }
+    50%{
+        transform: translateY(-70px);
+        background-color: red;
+        width: 150px;
+        height: 150px;
+    }
+    51%{
+        background-color: purple;
+        transform: translateY(-70px);
+    }
+    100%{
+        transform: translateY(-70px);
+        transform: translateX(-300px);
+        background-color: purple;
+        width: 1000px;
+        height: 1000px;
+        margin-bottom: 150px;
+    }
+
+}
