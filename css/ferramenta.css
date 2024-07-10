@@ -22,8 +22,14 @@ nav{
     align-items: center;
 }
 
-div{
+#base{
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+#outros{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
