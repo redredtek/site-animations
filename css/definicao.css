@@ -12,6 +12,7 @@ header{
 nav{ 
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
 
 .head1{
@@ -72,3 +73,10 @@ div{
 @keyframes e {from{transform: rotateZ(0deg);}to{transform: rotateZ(360deg);}}
 @keyframes f {from{transform: rotateY(0deg);}to{transform: rotateY(360deg);}}
 @keyframes g {from{transform: rotateX(0deg);}to{transform: rotateX(360deg);}}
+
+h2{
+    font-size: 50px;
+}
+h5{
+    font-size: 35px;
+}
